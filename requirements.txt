@@ -1,1 +1,65 @@
+# requirements.txt
+
+# Core Data Manipulation and Numerics
+# Essential for handling data structures (DataFrames) and numerical operations
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Data Acquisition (Choose based on your source)
+# For making HTTP requests to APIs or websites
+requests>=2.28.0
+# For parsing HTML/XML if web scraping financial data
+beautifulsoup4>=4.11.0
+lxml>=4.9.0 # Often used as a parser with BeautifulSoup
+# For specific financial data APIs/sources (Uncomment and install as needed)
+# yfinance>=0.2.0           # Yahoo Finance API access
+# alpha_vantage>=2.3.0      # Alpha Vantage API access
+# sec-edgar-downloader>=4.0.0 # Downloading SEC filings (useful for US companies)
+# openbb-terminal           # Comprehensive investment research platform (can be used programmatically)
+
+# Visualization
+# Standard plotting library
+matplotlib>=3.6.0
+# Higher-level interface for statistical plots, enhances matplotlib
+seaborn>=0.12.0
+# For interactive plots (optional but recommended for exploration)
+plotly>=5.10.0
+
+# Statistical Modeling, Econometrics, and Time Series Analysis
+# Core library for statistical tests, models (OLS, GLM), and time series (ARIMA, VAR)
+statsmodels>=0.13.0
+
+# Machine Learning (General Purpose)
+# Comprehensive library for classification, regression, clustering, dimensionality reduction, model selection, preprocessing
+scikit-learn>=1.1.0
+
+# Time Series Forecasting (Specialized Libraries - Optional)
+# Facebook/Meta's library, good for time series with seasonality and holidays
+# prophet>=1.1.0 # Consider if statsmodels ARIMA/SARIMA isn't sufficient or for quick prototyping
+
+# Natural Language Processing (Optional, for analyzing text like MD&A or earnings call transcripts)
+# nltk>=3.7              # Foundational NLP library (tokenization, stemming, etc.)
+# spacy>=3.4.0           # Modern NLP library for tokenization, NER, POS tagging
+# vaderSentiment>=3.3.0 # Rule-based sentiment analysis, good for financial text without training
+# transformers>=4.20.0   # Access to state-of-the-art models (BERT, FinBERT) via Hugging Face (Advanced)
+
+# Environment (Recommended for development and interactive analysis)
+# Interactive computing environment
+jupyterlab>=3.5.0   # Or jupyter>=1.0.0
+# Kernel for running Python code in Jupyter
+ipykernel>=6.15.0
+
+# Utility
+# For progress bars, helpful with long computations or downloads
+# tqdm>=4.60.0
+
+# --- Installation Notes ---
+# 1. Save this content as 'requirements.txt' in your project directory.
+# 2. Create and activate a virtual environment (recommended):
+#    python -m venv venv
+#    source venv/bin/activate  # On Linux/macOS
+#    .\venv\Scripts\activate    # On Windows
+# 3. Install the packages:
+#    pip install -r requirements.txt
+# 4. Uncomment optional libraries as needed and reinstall.
 
